@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Video Preload</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/1 - Parada Cardiaca.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+          <div class="background">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default offset-md-1">
+                    <img src="img/logo.png" class="navbar-brand">
+                    <img src="img/close.png" class="navbar-brand pull-right" style="cursor: pointer; opacity: .8">
+                </nav>
+                <div class="row">
+                    <div id="changePic" class="col-md-4 offset-md-1" >
+                        <h1 class="hosp-name">BLS Extra Hospitalar</h1>
+                        <p class="doc-name">Dr. Pedro Duccini</p>
+                        <p class="doc-name" style="font-size: 25px;">Cardiologista</p>
+                        <img src="img/options.png" style="cursor: pointer;">
+
+                        <div class="row" style="margin-top: 25px">
+                            <button type="button" class="mybtn btnementa btn btn-outline-light">Ementa do Curso</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="mybtn btnabout btn btn-outline-light">Sobre o Autor</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="mybtn btncourse btn btn-outline-light">Iniciar Curso</button>
+                        </div>
+                    </div>
+                    <div id="changeContent" class="col-md-6">
+                        <img class="doctor-pic" src="img/drpedro.png">
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+    </body>
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts.js"></script>
+</html>

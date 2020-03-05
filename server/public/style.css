@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .background {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .mybtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
+  .btncourse {
+      background-color: #00aaeb;
+      border: none;
+  }
+
+  .doctor-pic {
+      margin-right: 100px;
+  }
+
+  .hosp-name {
+      font-weight: 1000;
+      font-size: 55px;
+      font-family: 'Roboto';
+  }
+
+  .doc-name {
+      font-family: 'Roboto Slab';
+      font-size: 35px;
+  }
+
+  .contentCard {
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+    padding: 25px;
+    font-family: 'Roboto';
+    color: #3c4045;
+    text-align: justify;
+  }
+
+  .contentCard::-webkit-scrollbar-track
+{
+	border-radius: 6px;
+	background-color: #F5F5F5;
+}
+
+.contentCard::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.contentCard::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;
+	background-color: #00aeef;
+}

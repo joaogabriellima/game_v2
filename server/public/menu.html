@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 class="hosp-name">BLS Extra Hospitalar</h1>
+        <p class="doc-name">Dr. Pedro Duccini</p>
+        <p class="doc-name" style="font-size: 25px;">Cardiologista</p>
+        <img src="img/options.png" style="cursor: pointer;">
+
+        <div class="row" style="margin-top: 25px">
+            <button type="button" class="mybtn btnementa btn btn-outline-light">Ementa do Curso</button>
+        </div>
+        <div class="row">
+            <button type="button" class="mybtn btnabout btn btn-outline-light">Sobre o Autor</button>
+        </div>
+        <div class="row">
+            <button type="button" class="mybtn btncourse btn btn-outline-light">Iniciar Curso</button>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+    
+        $('.btnementa').on('click', function() {
+            $('#changeContent').load('ementa.html').hide().fadeIn(500);
+        });
+
+        $('.btnabout').on('click', function() {
+            $('#changeContent').load('about.html').hide().fadeIn(500);
+            $('#changePic').html('<img class="doctor-pic" src="img/drpedro_perfil.png">');
+        });
+    </script>
+</html>
