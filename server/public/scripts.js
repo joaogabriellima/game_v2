@@ -12,7 +12,7 @@
 
     
     $('.logout').on('click', function() {
-      window.location = 'login.html';
+      window.location = 'index.html';
     });
     
     $('.loginbtn').on('click', function(e) {
@@ -39,8 +39,5 @@
         })
         return;
       }
-
-
-
-      window.location.href = 'index.html';
+      window.location.href = 'home.html';
     });
