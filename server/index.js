@@ -10,7 +10,7 @@ fastify.register(require('fastify-static'), {
 fastify.get('/healthz', () => ({ ok: true }))
 
 fastify.setNotFoundHandler((req, res) => {
-  res.sendFile('index.html')
+  res.sendFile('login.html')
 })
 
 fastify.listen(PORT, '0.0.0.0', err => {

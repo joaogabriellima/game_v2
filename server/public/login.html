@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>BLS Platform - Login</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background: rgb(34,25,155);background: linear-gradient(90deg, rgba(34,25,155,1) 0%, rgba(12,120,207,1) 100%, rgba(0,212,255,1) 100%);overflow:hidden;font-family: 'Roboto'">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/bg_login.png">
+            </div>
+            <div class="col-md-5 p-5">
+                    <nav>
+                        <img src="img/logo_login.png" style="height: 50px;" class="navbar-brand">
+                    </nav>
+
+                    <div style="margin-top: 100px;">
+                        <form>
+                            <div class="form-group">
+                            <label for="username" class="loginlabel">Usuário</label>
+                            <input type="text" class="form-control txtloginform" id="username" placeholder="Digite seu usuário">
+                            </div>
+                            <div class="form-group">
+                            <label for="password" class="loginlabel">Senha</label>
+                            <input type="password" class="form-control txtloginform" id="password" placeholder="Digite sua senha">
+                            </div>
+
+                            <p style="color: #fff;">
+                                Não possui uma conta? <b style="cursor: pointer;">Cadastre-se!</b>
+                                <br /><span style="cursor: pointer;">Esqueci minha senha</span>
+                            </p>
+
+                            <button style="margin-top: 50px" type="submit" class="loginbtn btn btn-primary">ENTRAR</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts.js"></script>
+</html>

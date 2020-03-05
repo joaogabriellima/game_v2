@@ -6,7 +6,7 @@
   
   body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Roboto';
     font-size: 17px;
   }
   
@@ -83,4 +83,40 @@
 {
 	border-radius: 6px;
 	background-color: #00aeef;
+}
+
+.loginbtn {
+  background-color: #00aaeb;
+  border-radius: 0px;
+  padding: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-weight: 1000;
+}
+
+.txtloginform {
+  border: none;
+  border-bottom: rgba(255, 255, 255, 0.8) solid 2px;
+  border-radius: 0px;
+  background: transparent;
+  color: #fff;
+}
+
+.txtloginform:focus {
+  border:none;
+  border-bottom: rgb(255, 255, 255) solid 3px;
+  background: transparent;
+  outline: none !important;
+  outline-width: 0 !important;
+  color: #fff;
+}
+
+.loginlabel {
+  color: #fff;
+  font-weight: bold;
+}
+
+.txtloginform::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: .65; /* Firefox */
 }
