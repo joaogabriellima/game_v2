@@ -9,7 +9,9 @@
       $('#changePic').html('<img class="doctor-pic" src="img/drpedro_perfil.png">');
     });
 
-
+    $('.btncourse').on('click', function() {
+      window.location.href = 'course.html';
+    });
     
     $('.logout').on('click', function() {
       window.location = 'index.html';
@@ -36,7 +38,13 @@
           text: 'Não foi possível realizar login, cheque os dados e tente novamente',
           icon: 'error',
           confirmButtonText: 'Ok'
+        }).then((result) => {
+          setTimeout(function() {
+            $('#username').focus();
+            $('#password').val('');
+          }, 11);
         })
+
         return;
       }
       window.location.href = 'home.html';
