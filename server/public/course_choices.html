@@ -19,16 +19,16 @@
                 </div>
             </div>
             <div class="row text-center choiceOptions">
-                <div class="col-md-3 option">
+                <div class="col-md-3 option desmaio">
                     <p>Desmaio</p>
                 </div>
-                <div class="col-md-3 option">
+                <div class="col-md-3 option convulsao">
                     <p>Convulsão</p>
                 </div>
-                <div class="col-md-3 option">
+                <div class="col-md-3 option paradaCardiaca">
                     <p>Parada Cardíaca</p>
                 </div>
-                <div class="col-md-3 option">
+                <div class="col-md-3 option undefined">
                     <p>Indefinido</p>
                 </div>
             </div>
@@ -38,4 +38,15 @@
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="scripts.js"></script>
+
+
+    <script type="text/javascript">
+        $('.successChoiceVideo').on('ended', function() {
+            window.location.href = 'success.html';
+        });
+
+        $('.errorChoiceVideo').on('ended', function() {
+            window.location.href = 'error.html';
+        });
+    </script>
 </html>

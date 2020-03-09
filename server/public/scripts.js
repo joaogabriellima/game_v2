@@ -54,3 +54,45 @@
     $('#videoCourse').on('ended', function() {
       $('#courseContent').load('course_choices.html');
     });
+
+    $('.paradaCardiaca').on('click', function() {
+      $('body').html('<video src="videos/4 - Atletas.mp4" autoplay controls class="videoCourse successChoiceVideo"></video>');
+      setTimeout(function() {
+        $('.successChoiceVideo').on('ended', function() {
+          window.location.href = 'success.html';
+        });
+      }, 100);
+    });
+
+    $('.desmaio').on('click', function() {
+      $('body').html('<video src="videos/3 - Insuficiência Cardíaca.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
+      setTimeout(function() {
+        $('.errorChoiceVideo').on('ended', function() {
+          window.location.href = 'error.html';
+        });
+      }, 100);
+  
+    });
+
+    $('.convulsao').on('click', function() {
+      $('body').html('<video src="videos/2 - Arritmia.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
+      setTimeout(function() {
+        $('.errorChoiceVideo').on('ended', function() {
+          window.location.href = 'error.html';
+        });
+      }, 100);
+  
+    });
+
+    $('.undefined').on('click', function() {
+      $('body').html('<video src="videos/1 - Parada Cardiaca.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
+      setTimeout(function() {
+        $('.errorChoiceVideo').on('ended', function() {
+          window.location.href = 'error.html';
+        });
+      }, 100);
+  
+    });
+
+
+
