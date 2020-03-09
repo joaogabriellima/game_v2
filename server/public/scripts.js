@@ -49,3 +49,8 @@
       }
       window.location.href = 'home.html';
     });
+
+
+    $('#videoCourse').on('ended', function() {
+      $('#courseContent').load('course_choices.html');
+    });
