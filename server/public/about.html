@@ -8,7 +8,7 @@
                 <div class="card-body p-3">
                   <nav class="navbar navbar-default">
                     <h4 class="card-title navbar-brand" style="color: #241298; font-weight: bold;font-size:30px">Dr. Pedro Duccini Trindade</h4>
-                    <img src="img/close.png" class="closeinfo navbar-brand pull-right" style="cursor: pointer; opacity: .8">
+                    <img src="img/close.png" loading="eager" class="closeinfo navbar-brand pull-right" style="cursor: pointer; opacity: .8">
                   </nav>
                   <h6 class="card-title" style="color: #00aeef; font-weight: bold;">Cardiologista e Arritmologista | CRM SP: 121561</h6>
                   <p>
@@ -27,7 +27,7 @@
 
     <script type="text/javascript">
       $('.closeinfo').on('click', function() {
-        $('#changePic').load('menu.html').hide().fadeIn(500);
+        $('#changePic').load('menu.html').fadeIn(500);
         $('#changeContent').html('<img class="doctor-pic" src="img/drpedro.png">');
       });
   </script>

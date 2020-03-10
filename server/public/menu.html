@@ -22,12 +22,12 @@
     <script type="text/javascript">
     
         $('.btnementa').on('click', function() {
-            $('#changeContent').load('ementa.html').hide().fadeIn(500);
+            $('#changeContent').load('ementa.html').fadeIn(500);
         });
 
         $('.btnabout').on('click', function() {
-            $('#changeContent').load('about.html').hide().fadeIn(500);
-            $('#changePic').html('<img class="doctor-pic" src="img/drpedro_perfil.png">').hide().fadeIn(500);
+            $('#changeContent').load('about.html').fadeIn(500);
+            $('#changePic').html('<img class="doctor-pic" loading="eager" src="img/drpedro_perfil.png">').fadeIn(500);
         });
 
         $('.btncourse').on('click', function() {

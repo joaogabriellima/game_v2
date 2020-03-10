@@ -1,11 +1,11 @@
 
     
     $('.btnementa').on('click', function() {
-      $('#changeContent').load('ementa.html').hide().fadeIn(500);
+      $('#changeContent').load('ementa.html').fadeIn(500);
     });
 
     $('.btnabout').on('click', function() {
-      $('#changeContent').load('about.html').hide().fadeIn(500);
+      $('#changeContent').load('about.html').fadeIn(500);
       $('#changePic').html('<img class="doctor-pic" src="img/drpedro_perfil.png">');
     });
 
@@ -52,47 +52,54 @@
 
 
     $('#videoCourse').on('ended', function() {
-      $('#courseContent').load('course_choices.html');
+      $('#courseContent').html('<div class="cycle-slideshow slidediv" data-cycle-loop="1"><img src="img/teste1.png" loading="eager"><img src="img/teste2.jpg" loading="eager"><img src="img/teste3.jpg" loading="eager"></div>');
+
+      createSlideRedirection();
     });
+
+    function createSlideRedirection() {
+      $('.cycle-slideshow').cycle({
+        loop: 1,
+        timeout: 2000,
+      });
+
+      $('.cycle-slideshow').on('cycle-finished', function(evt, opt) {
+        window.location.href = "course_choices.html";
+      });
+    }
+
 
     $('.paradaCardiaca').on('click', function() {
       $('body').html('<video src="videos/4 - Atletas.mp4" autoplay controls class="videoCourse successChoiceVideo"></video>');
-      setTimeout(function() {
-        $('.successChoiceVideo').on('ended', function() {
-          window.location.href = 'success.html';
-        });
-      }, 100);
+      redirectSuccess();
     });
 
     $('.desmaio').on('click', function() {
       $('body').html('<video src="videos/3 - Insuficiência Cardíaca.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
-      setTimeout(function() {
-        $('.errorChoiceVideo').on('ended', function() {
-          window.location.href = 'error.html';
-        });
-      }, 100);
-  
+      redirectError();
     });
 
     $('.convulsao').on('click', function() {
       $('body').html('<video src="videos/2 - Arritmia.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
-      setTimeout(function() {
-        $('.errorChoiceVideo').on('ended', function() {
-          window.location.href = 'error.html';
-        });
-      }, 100);
-  
+      redirectError();
     });
 
     $('.undefined').on('click', function() {
       $('body').html('<video src="videos/1 - Parada Cardiaca.mp4" autoplay controls class="videoCourse errorChoiceVideo"></video>');
-      setTimeout(function() {
-        $('.errorChoiceVideo').on('ended', function() {
-          window.location.href = 'error.html';
-        });
-      }, 100);
-  
+      redirectError();
     });
+
+    function redirectError() {
+      $('.errorChoiceVideo').on('ended', function() {
+        window.location.href = 'course_choices.html';
+      });  
+    }
+
+    function redirectSuccess() {
+      $('.successChoiceVideo').on('ended', function() {
+        window.location.href = 'success.html';
+      });
+    }
 
 
 
