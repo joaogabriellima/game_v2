@@ -52,7 +52,7 @@
 
 
     $('#videoCourse').on('ended', function() {
-      $('#courseContent').html('<div class="cycle-slideshow slidediv" data-cycle-loop="1"><img src="img/teste1.png" loading="eager"><img src="img/teste2.jpg" loading="eager"><img src="img/teste3.jpg" loading="eager"></div>');
+      $('#courseContent').html('<div class="cycle-slideshow slidediv" data-cycle-loop="1"><img src="img/infarto_1.jpg" loading="eager"><img src="img/infarto_2.jpg" loading="eager"><img src="img/infarto_3.jpg" loading="eager"></div>');
 
       createSlideRedirection();
     });
