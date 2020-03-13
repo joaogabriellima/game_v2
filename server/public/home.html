@@ -18,31 +18,40 @@
             Your browser does not support HTML5 video.
         </video>
 
-          <div class="background">
-            <div class="container-fluid">
-                <nav class="navbar navbar-default offset-md-1">
-                    <img src="img/logo.png" class="navbar-brand">
-                    <img src="img/close.png" alt="logout" title="Logout" class="logout navbar-brand pull-right" style="cursor: pointer; opacity: .8">
+          <div id="background" class="background">
+            <div>
+                <nav class="navbar navbar-default" style="padding: 0 !important;">
+                        <div class="col-md-4 gradientBg" style="padding-left: 0 !important; padding-top: 15px;">
+                            <div class="row">
+                                <div class="offset-md-2">
+                                    <img src="img/logo.png" class="navbar-brand">
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/close.png" alt="logout" title="Logout" class="logout navbar-brand pull-right" style="cursor: pointer; opacity: .8">
                 </nav>
-                <div class="row">
-                    <div id="changePic" class="col-md-4 offset-md-1" >
-                        <h1 class="hosp-name">BLS Extra Hospitalar</h1>
-                        <p class="doc-name">Dr. Pedro Duccini</p>
-                        <p class="doc-name" style="font-size: 25px;">Cardiologista</p>
-                        <img src="img/options.png" style="cursor: pointer;">
-
-                        <div class="row" style="margin-top: 25px">
-                            <button type="button" class="mybtn btnementa btn btn-outline-light">Ementa do Curso</button>
-                        </div>
-                        <div class="row">
-                            <button type="button" class="mybtn btnabout btn btn-outline-light">Sobre o Autor</button>
-                        </div>
-                        <div class="row">
-                            <button type="button" class="mybtn btncourse btn btn-outline-light">Iniciar Curso</button>
+                <div class="row" style="height: 100%;">
+                    <div id="changePic" class="col-md-4 gradientBg">
+                        <div class="row" style="margin-top: 2em;">
+                            <div class="offset-md-2">
+                                <h1 class="hosp-name">BLS Extra Hospitalar</h1>
+                                <p class="doc-name">Dr. Pedro Duccini <br />
+                                <span style="font-size: 25px;">Cardiologista</span></p>
+                                <img src="img/options.png" style="cursor: pointer;">
+        
+                                <div style="margin-top: 25px">
+                                    <button type="button" class="mybtn btnementa btn btn-outline-light">Ementa do Curso</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="mybtn btnabout btn btn-outline-light">Sobre o Autor</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="mybtn btncourse btn btn-outline-light">Iniciar Curso</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="changeContent" class="col-md-6">
-                        <img class="doctor-pic" loading="eager" src="img/drpedro.png">
                     </div>
                 </div>
             </div>

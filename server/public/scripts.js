@@ -1,12 +1,13 @@
 
     
     $('.btnementa').on('click', function() {
-      $('#changeContent').load('ementa.html').fadeIn(500);
+      $('#changeContent').load('ementa.html').hide().fadeIn(600);
+      $('#background').css('background', 'rgba(0, 0, 0, 0.75)');
     });
 
     $('.btnabout').on('click', function() {
-      $('#changeContent').load('about.html').fadeIn(500);
-      $('#changePic').html('<img class="doctor-pic" src="img/drpedro_perfil.png">');
+      $('#changeContent').load('about.html').hide().fadeIn(600);
+      $('#background').css('background', 'rgba(0, 0, 0, 0.75)');
     });
 
     $('.btncourse').on('click', function() {
@@ -52,22 +53,8 @@
 
 
     $('#videoCourse').on('ended', function() {
-      $('#courseContent').html('<div class="cycle-slideshow slidediv" data-cycle-loop="1"><img src="img/infarto_1.jpg" loading="eager"><img src="img/infarto_2.jpg" loading="eager"><img src="img/infarto_3.jpg" loading="eager"></div>');
-
-      createSlideRedirection();
+      window.location.href = "course_choices.html";
     });
-
-    function createSlideRedirection() {
-      $('.cycle-slideshow').cycle({
-        loop: 1,
-        timeout: 2000,
-      });
-
-      $('.cycle-slideshow').on('cycle-finished', function(evt, opt) {
-        window.location.href = "course_choices.html";
-      });
-    }
-
 
     $('.paradaCardiaca').on('click', function() {
       $('body').html('<video src="videos/4 - Atletas.mp4" autoplay controls class="videoCourse successChoiceVideo"></video>');
