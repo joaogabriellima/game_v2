@@ -80,17 +80,34 @@
     background: transparent !important;
   }
 
-  .contentCard {
-    min-height: 500px;
-    max-height: 500px;
-    overflow: auto;
-    padding: 25px;
-    font-family: 'Roboto';
-    color: #FFF;
-    text-align: justify;
-    background: transparent;
-    border: none;
-  }
+.contentCard {
+  min-height: 500px;
+  max-height: 500px;
+  overflow: auto;
+  padding: 25px;
+  font-family: 'Roboto';
+  color: #FFF;
+  text-align: justify;
+  background: transparent;
+  border: none;
+}
+
+.contentCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 70px;
+  background: linear-gradient(#000, rgba(0, 0, 0, 0.001));
+}
+.contentCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.001), #000);
+}
 
   .contentCard::-webkit-scrollbar-track
 {
