@@ -92,23 +92,6 @@
   border: none;
 }
 
-.contentCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 90%;
-  height: 70px;
-  background: linear-gradient(#000, rgba(0, 0, 0, 0.001));
-}
-.contentCard::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 90%;
-  height: 70px;
-  background: linear-gradient(rgba(0, 0, 0, 0.001), #000);
-}
-
   .contentCard::-webkit-scrollbar-track
 {
 	border-radius: 6px;
